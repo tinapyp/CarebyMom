@@ -11,4 +11,8 @@
     <string name="name">Name</string>
     <string name="gestational_age">Gestational Age (Day)</string>
     <string name="already_have_an_account">Already have an account?</string>
+    <string name="home">Home</string>
+    <string name="mom_s_tips">Mom\'s Tips</string>
+    <string name="health_care">Healthy Care</string>
+    <string name="profile">Profile</string>
 </resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.dicoding.carebymom.ui.home.HomeFragment"
+        android:label="@string/home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_tips"
+        android:name="com.dicoding.carebymom.ui.momstips.TipsFragment"
+        android:label="@string/mom_s_tips"
+        tools:layout="@layout/fragment_tips" />
+
+    <fragment
+        android:id="@+id/navigation_health"
+        android:name="com.dicoding.carebymom.ui.health.HealthFragment"
+        android:label="@string/health_care"
+        tools:layout="@layout/fragment_health" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.dicoding.carebymom.ui.profile.ProfileFragment"
+        android:label="@string/profile"
+        tools:layout="@layout/fragment_profile"/>
+</navigation>
