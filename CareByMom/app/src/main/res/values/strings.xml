@@ -15,4 +15,11 @@
     <string name="mom_s_tips">Mom\'s Tips</string>
     <string name="health_care">Healthy Care</string>
     <string name="profile">Profile</string>
+    <string name="date">Date</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam justo metus, pharetra vitae placerat vitae, venenatis et risus. Donec purus massa, varius in interdum eu, dictum eu elit</string>
+    <string name="username">Username</string>
+    <string name="my_account">My Account</string>
+    <string name="settings">Settings</string>
+    <string name="help">Help</string>
+    <string name="logout">Logout</string>
 </resources>

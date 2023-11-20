@@ -28,10 +28,21 @@ class HomeFragment : Fragment() {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textDate: TextView = binding.textDate
-        homeViewModel.text.observe(viewLifecycleOwner) {
+        val textDate: TextView = binding.tvDate
+        homeViewModel.textDate.observe(viewLifecycleOwner) {
             textDate.text = it
         }
+
+        val textDays : TextView = binding.tvDays
+        homeViewModel.textDays.observe(viewLifecycleOwner){
+            textDays.text = it
+        }
+
+        val textGrowth : TextView = binding.tvGrowth
+        homeViewModel.textGrowth.observe(viewLifecycleOwner){
+            textGrowth.text = it
+        }
+
         return root
     }
 

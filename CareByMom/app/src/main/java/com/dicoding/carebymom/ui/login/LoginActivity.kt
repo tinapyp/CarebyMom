@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.dicoding.carebymom.databinding.ActivityLoginBinding
+import com.dicoding.carebymom.ui.MainActivity
 import com.dicoding.carebymom.ui.register.RegisterActivity
 
 class LoginActivity : AppCompatActivity() {
@@ -18,6 +19,11 @@ class LoginActivity : AppCompatActivity() {
 
         binding.signUpBtn.setOnClickListener{
             val intent = Intent(this, RegisterActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.loginButton.setOnClickListener{
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
 

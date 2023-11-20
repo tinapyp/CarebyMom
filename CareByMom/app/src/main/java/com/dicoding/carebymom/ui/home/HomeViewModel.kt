@@ -9,10 +9,23 @@ import java.util.Locale
 
 class HomeViewModel : ViewModel() {
 
-    private val _text = MutableLiveData<String>().apply {
+    private val _textDate = MutableLiveData<String>().apply {
         val currentDate = SimpleDateFormat("EEEE, \nd MMMM yyyy", Locale.getDefault()).format(Date())
         value = "$currentDate"
     }
 
-    val text: LiveData<String> = _text
+    private val _textDays = MutableLiveData<String>().apply {
+        val currentDays = "120"
+        value = "$currentDays\nDays"
+    }
+
+    private val _textGrowth = MutableLiveData<String>().apply {
+        val growth = "Bayi sudah bisa makan dan cari uang sendiri."
+        value = "$growth"
+    }
+
+    val textDate: LiveData<String> = _textDate
+    val textDays : LiveData<String> = _textDays
+    val textGrowth : LiveData<String> = _textGrowth
+
 }
