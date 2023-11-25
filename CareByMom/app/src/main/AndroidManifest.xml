@@ -13,6 +13,9 @@
         android:theme="@style/Theme.CareByMom"
         tools:targetApi="31">
         <activity
+            android:name=".ui.result.TestResultActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.detail.DetailTipsActivity"
             android:exported="false" />
         <activity

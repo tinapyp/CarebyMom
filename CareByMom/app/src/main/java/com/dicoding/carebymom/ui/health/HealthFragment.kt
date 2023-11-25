@@ -1,13 +1,13 @@
 package com.dicoding.carebymom.ui.health
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
-import androidx.lifecycle.ViewModelProvider
 import com.dicoding.carebymom.databinding.FragmentHealthBinding
+import com.dicoding.carebymom.ui.result.TestResultActivity
 
 class HealthFragment : Fragment() {
     private var _binding: FragmentHealthBinding? = null
@@ -21,21 +21,19 @@ class HealthFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val healthViewModel =
-            ViewModelProvider(this).get(HealthViewModel::class.java)
 
         _binding = FragmentHealthBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textHealth
-        healthViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
-        }
         return root
     }
 
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        binding.checkUpButton.setOnClickListener{
+            val intent = Intent(requireContext(), TestResultActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

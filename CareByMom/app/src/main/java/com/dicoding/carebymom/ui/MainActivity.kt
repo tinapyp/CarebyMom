@@ -31,6 +31,17 @@ class MainActivity : AppCompatActivity() {
 
         navView.setupWithNavController(navController)
 
+        // Observasi perubahan fragment
+        navController.addOnDestinationChangedListener { _, destination, _ ->
+            val fragmentTitle = when (destination.id) {
+                R.id.navigation_tips -> getString(R.string.mom_s_tips)
+                R.id.navigation_health -> getString(R.string.health_care)
+                R.id.navigation_profile -> getString(R.string.profile)
+                else -> getString(R.string.app_name)
+            }
+
+            supportActionBar?.title = fragmentTitle
+        }
 
     }
 }

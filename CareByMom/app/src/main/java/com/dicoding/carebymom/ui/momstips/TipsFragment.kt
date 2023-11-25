@@ -5,7 +5,6 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.lifecycle.ViewModelProvider
 import com.dicoding.carebymom.databinding.FragmentTipsBinding
 
 class TipsFragment : Fragment() {
@@ -20,9 +19,6 @@ class TipsFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val tipsViewModel =
-            ViewModelProvider(this).get(TipsViewModel::class.java)
-
         _binding = FragmentTipsBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
