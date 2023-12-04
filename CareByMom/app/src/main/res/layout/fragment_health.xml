@@ -60,19 +60,19 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
-            android:id="@+id/tvTemperature"
+            android:id="@+id/tvPregnancyAge"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
             android:layout_marginTop="16dp"
-            android:text="@string/body_temperature_celcius"
+            android:text="@string/pregnancy_age"
             android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/AgeEditTextLayout" />
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/TemperatureEditTextLayout"
+            android:id="@+id/PregnancyAgeEditTextLayout"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -84,10 +84,10 @@
             app:boxCornerRadiusTopStart="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvTemperature">
+            app:layout_constraintTop_toBottomOf="@+id/tvPregnancyAge">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/TemperatureEditText"
+                android:id="@+id/PregnancyAgeEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -106,7 +106,7 @@
             android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/TemperatureEditTextLayout" />
+            app:layout_constraintTop_toBottomOf="@+id/PregnancyAgeEditTextLayout" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/WeightEditTextLayout"
@@ -134,19 +134,19 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
-            android:id="@+id/tvGesAge"
+            android:id="@+id/tvArmCircum"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
             android:layout_marginTop="16dp"
-            android:text="@string/gestational_age"
+            android:text="@string/arm_circumference_cm"
             android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/WeightEditTextLayout" />
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/GesAgeEditTextLayout"
+            android:id="@+id/ArmCircumEditTextLayout"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -158,10 +158,10 @@
             app:boxCornerRadiusTopStart="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvGesAge">
+            app:layout_constraintTop_toBottomOf="@+id/tvArmCircum">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/GesAgeEditText"
+                android:id="@+id/ArmCircumEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -180,7 +180,7 @@
             android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/GesAgeEditTextLayout" />
+            app:layout_constraintTop_toBottomOf="@+id/ArmCircumEditTextLayout" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/AbdominalCircumferenceEditTextLayout"
@@ -207,6 +207,43 @@
                 tools:ignore="SpeakableTextPresentCheck" />
         </com.google.android.material.textfield.TextInputLayout>
 
+        <TextView
+            android:id="@+id/tvBloodPressure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/blood_pressure_mmhg"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/AbdominalCircumferenceEditTextLayout" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/BloodPressureEditTextLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            app:boxCornerRadiusBottomEnd="16dp"
+            app:boxCornerRadiusBottomStart="16dp"
+            app:boxCornerRadiusTopEnd="16dp"
+            app:boxCornerRadiusTopStart="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvBloodPressure">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/BloodPressureEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:textSize="16sp"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
         <Button
             android:id="@+id/checkUpButton"
             android:layout_width="wrap_content"
@@ -221,7 +258,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/AbdominalCircumferenceEditTextLayout" />
+            app:layout_constraintTop_toBottomOf="@+id/BloodPressureEditTextLayout" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
