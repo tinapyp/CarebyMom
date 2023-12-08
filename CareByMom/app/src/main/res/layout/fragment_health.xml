@@ -134,6 +134,43 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
+            android:id="@+id/tvHeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/height_cm"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/WeightEditTextLayout" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/HeightEditTextLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            app:boxCornerRadiusBottomEnd="16dp"
+            app:boxCornerRadiusBottomStart="16dp"
+            app:boxCornerRadiusTopEnd="16dp"
+            app:boxCornerRadiusTopStart="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvHeight">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/HeightEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:textSize="16sp"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
             android:id="@+id/tvArmCircum"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -143,7 +180,7 @@
             android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/WeightEditTextLayout" />
+            app:layout_constraintTop_toBottomOf="@+id/HeightEditTextLayout" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/ArmCircumEditTextLayout"
@@ -208,19 +245,19 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
-            android:id="@+id/tvBloodPressure"
+            android:id="@+id/tvHeartBeat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
             android:layout_marginTop="16dp"
-            android:text="@string/blood_pressure_mmhg"
+            android:text="@string/heart_beat_per_minute"
             android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/AbdominalCircumferenceEditTextLayout" />
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/BloodPressureEditTextLayout"
+            android:id="@+id/HeartBeatEditTextLayout"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -232,10 +269,10 @@
             app:boxCornerRadiusTopStart="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvBloodPressure">
+            app:layout_constraintTop_toBottomOf="@+id/tvHeartBeat">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/BloodPressureEditText"
+                android:id="@+id/HeartBeatEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -258,7 +295,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/BloodPressureEditTextLayout" />
+            app:layout_constraintTop_toBottomOf="@+id/HeartBeatEditTextLayout" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

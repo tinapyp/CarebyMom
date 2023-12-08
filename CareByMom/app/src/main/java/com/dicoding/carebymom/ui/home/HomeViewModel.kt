@@ -20,7 +20,7 @@ class HomeViewModel : ViewModel() {
     }
 
     private val _textGrowth = MutableLiveData<String>().apply {
-        val growth = "Bayi sudah bisa makan dan cari uang sendiri."
+        val growth = "Babies can already eat and earn their own money."
         value = "$growth"
     }
 

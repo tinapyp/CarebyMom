@@ -6,20 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".ui.momstips.TipsFragment">
 
-    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
-        android:id="@+id/swipeRefreshLayout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginHorizontal="16dp">
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_list_story"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:paddingTop="16dp"
-            tools:listitem="@layout/tips_item"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"/>
-    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_list_tips"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:paddingTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/tips_item" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

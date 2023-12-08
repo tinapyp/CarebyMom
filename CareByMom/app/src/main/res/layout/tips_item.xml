@@ -4,14 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginBottom="16dp"
     style="?attr/materialCardViewElevatedStyle"
-    android:layout_margin="25dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="10dp"
     android:id="@+id/cv_tips">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/pink2">
 
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/ivTips"
@@ -32,8 +34,9 @@
             android:layout_gravity="center"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
+            android:justificationMode="inter_word"
             android:text="@string/healthy_activities_for_pregnant_women"
-            android:textSize="18sp"
+            android:textSize="14sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@+id/ivTips"
             app:layout_constraintEnd_toEndOf="parent"
