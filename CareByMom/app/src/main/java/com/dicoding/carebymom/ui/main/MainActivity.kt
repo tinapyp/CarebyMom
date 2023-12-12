@@ -1,14 +1,22 @@
-package com.dicoding.carebymom.ui
+package com.dicoding.carebymom.ui.main
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.activity.viewModels
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
 import com.dicoding.carebymom.R
 import com.dicoding.carebymom.databinding.ActivityMainBinding
+import com.dicoding.carebymom.ui.ViewModelFactory
+import com.dicoding.carebymom.ui.login.LoginActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
+
+    private val viewModel by viewModels<MainViewModel> {
+        ViewModelFactory.getInstance(this)
+    }
 
     private lateinit var binding: ActivityMainBinding
 
@@ -17,6 +25,16 @@ class MainActivity : AppCompatActivity() {
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        viewModel.getSession().observe(this) { user ->
+
+            if (!user.isLogin) {
+                val intent = Intent(this, LoginActivity::class.java)
+                intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
+                startActivity(intent)
+                finish()
+            }
+        }
 
         val toolbar = binding.toolbar
         setSupportActionBar(toolbar)

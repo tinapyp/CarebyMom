@@ -34,6 +34,13 @@
     <string name="arm_circumference_cm">Arm Circumference (Cm)</string>
     <string name="height_cm">Height (Cm)</string>
     <string name="heart_beat_per_minute">Heart Beat Per Minute</string>
+    <string name="last_period_time">Last period time</string>
+    <string name="pick_last_period_date">Pick Last Period Date</string>
+    <string name="username_cannot_be_empty">Username cannot be empty</string>
+    <string name="password_cannot_be_empty">Password cannot be empty</string>
+    <string name="email_cannot_be_empty">Email cannot be empty</string>
+    <string name="register_success">Register Success</string>
+    <string name="continuee">Continue</string>
     <string-array name="data_name">
         <item>Why is gaining a healthy amount of weight during pregnancy important?</item>
         <item>How much should I eat and drink?</item>
