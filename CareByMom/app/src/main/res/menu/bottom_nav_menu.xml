@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home"
+        android:title="@string/home" />
+
+    <item
+        android:id="@+id/navigation_tips"
+        android:icon="@drawable/ic_tips"
+        android:title="@string/mom_s_tips" />
+
+    <item
+        android:id="@+id/navigation_health"
+        android:icon="@drawable/ic_health"
+        android:title="@string/health_care" />
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/ic_person_black"
+        android:title="@string/profile" />
+
+</menu>

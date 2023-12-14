@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">CareByMom</string>
+    <string name="invalid_email_address">Invalid Email Address</string>
+    <string name="invalid_password">Password cannot be less than 8 characters</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="dont_have_an_account">Don\'t have an account?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="register">Register,</string>
+    <string name="name">Name</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="home">Home</string>
+    <string name="mom_s_tips">Mom\'s Tips</string>
+    <string name="health_care">Healthy Care</string>
+    <string name="profile">Profile</string>
+    <string name="date">Date</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam justo metus, pharetra vitae placerat vitae, venenatis et risus. Donec purus massa, varius in interdum eu, dictum eu elit</string>
+    <string name="username">Username</string>
+    <string name="my_account">My Account</string>
+    <string name="settings">Settings</string>
+    <string name="help">Help</string>
+    <string name="logout">Logout</string>
+    <string name="gestational_age">Gestational Age</string>
+    <string name="healthy_activities_for_pregnant_women">Healthy activities for pregnant women</string>
+    <string name="fill_the_data_below">Fill the data below!</string>
+    <string name="age">Mother\'s Age (Years)</string>
+    <string name="body_temperature_celcius">Body Temperature (Celcius)</string>
+    <string name="weight_kg">Weight (Kg)</string>
+    <string name="abdominal_circumference_cm">Abdominal Circumference (Cm)</string>
+    <string name="check_up">Check Up</string>
+    <string name="test_result">Test result,</string>
+    <string name="pregnancy_age">Pregnancy Age (Weeks)</string>
+    <string name="arm_circumference_cm">Arm Circumference (Cm)</string>
+    <string name="height_cm">Height (Cm)</string>
+    <string name="heart_beat_per_minute">Heart Beat Per Minute</string>
+    <string name="last_period_time">Last period time</string>
+    <string name="pick_last_period_date">Pick Last Period Date</string>
+    <string name="username_cannot_be_empty">Username cannot be empty</string>
+    <string name="password_cannot_be_empty">Password cannot be empty</string>
+    <string name="email_cannot_be_empty">Email cannot be empty</string>
+    <string name="register_success">Register Success</string>
+    <string name="continuee">Continue</string>
+    <string-array name="data_name">
+        <item>Why is gaining a healthy amount of weight during pregnancy important?</item>
+        <item>How much should I eat and drink?</item>
+        <item>What if I’m a vegetarian?</item>
+        <item>Do I have any special nutrition needs now that I’m pregnant?</item>
+        <item>How much and what type of physical activity do I need?</item>
+        <item>How may breastfeeding help?</item>
+    </string-array>
+    <string-array name="data_description">
+        <item>\t\t\tGaining an appropriate amount of weight during pregnancy helps your baby grow to a healthy size. But gaining too much or too little weight may lead to serious health problems for you and your baby.\n\n\t\t\tAccording to experts, gaining too much weight during pregnancy raises your chances for developing gestational diabetes (diabetes during pregnancy) and high blood pressure during pregnancy. It also increases your risk for type 2 diabetes and high blood pressure later in life. If you’re overweight or have obesity when you get pregnant, your chances for health problems may be even higher. You could also be more likely to have a cesarean section (C-section).\n\n\t\t\tGaining a healthy amount of weight helps you have an easier pregnancy and delivery. It may also help make it easier for you to get back to a healthy weight after delivery. Research shows that recommended amounts of weight gain during pregnancy can also lower the chances that you or your child will have obesity and weight-related problems later in life.</item>
+        <item>\t\t\tConsuming healthy foods and low-calorie beverages, particularly water, and the appropriate number of calories may help you and your baby gain the proper amount of weight.\n\n\t\t\tHow much food and how many calories you need depends on things such as your weight before pregnancy, your age, and how quickly you gain weight. If you’re at a healthy weight, the Centers for Disease Control and Prevention (CDC) says you need no extra calories in your first trimester, about 340 extra calories a day in your second trimester, and about 450 extra calories a day in your third trimester.1 You also may not need extra calories during the final weeks of pregnancy.\n\n\t\t\tCheck with your health care professional about your weight gain. If you’re not gaining the weight you need, he or she may advise you to take in more calories. If you’re gaining too much weight, you may need to cut down on calories. Each woman’s needs are different. Your needs also depend on whether you were underweight, overweight, or had obesity before you became pregnant, or if you’re having more than one baby.</item>
+        <item>\t\t\tA vegetarian eating plan during pregnancy can be healthy. Consider the quality of your eating plan and talk to your health care professional to make sure you’re getting enough calcium, iron, protein, vitamin B12, vitamin D, and other needed nutrients. Your health care professional may also tell you to take vitamins and minerals that will help you meet your needs.</item>
+        <item>\t\t\tYes. During pregnancy, you need more vitamins and minerals such as folate, iron, and calcium.\n\n\t\t\tGetting the appropriate amount of folate is very important. Folate, a B vitamin also known as folic acid, may help prevent birth defects. Before pregnancy, you need 400 mcg per day from supplements or fortified foods, in addition to the folate you get naturally from foods and beverages. During pregnancy, you need 600 mcg. While breastfeeding, you need 500 mcg of folate per day.Foods high in folate include orange juice, strawberries, spinach, broccoli, beans, fortified breads, and fortified low-sugar breakfast cereals. These foods may even provide 100% of the daily value of folic acid per serving.\n\n\t\t\tMost health care professionals tell women who are pregnant to take a prenatal vitamin every day and consume healthy foods, snacks, and beverages. Ask your doctor about what you should take.</item>
+        <item>\t\t\tMost women need the same amount of physical activity as they did before becoming pregnant. Aim for at least 150 minutes a week of moderate-intensity aerobic activity. Aerobic activities—also called endurance or cardio activities—use large muscle groups (back, chest, and legs) to increase your heart rate and breathing. Brisk walking is a form of aerobic activity.\n\n\t\t\tHow can you tell if you’re doing moderate-intensity aerobic activity? Take the “talk test” to find out. If you’re breathing hard but can still have a conversation easily—but you can’t sing—that’s moderate intensity.\n\n\t\t\tIf you can only say a few words before pausing for a breath, that’s called vigorous-intensity activity. If you were in the habit of doing vigorous-intensity aerobic activity or were physically active before your pregnancy, then it’s likely okay for you to continue these activities during your pregnancy.\n\n\t\t\tYou can talk to your health care professional about whether to or how to adjust your physical activity while you’re pregnant. If you have health issues such as obesity, high blood pressure, diabetes, or anemia (too few healthy red blood cells), ask your health care professional about a level of activity that’s safe for you and your unborn baby.</item>
+        <item>\t\t\tBreastfeeding may or may not make it easier for you to lose weight because your body uses extra calories to produce milk. Even if breastfeeding does not help you lose weight, it’s linked to many other benefits for mother and child.\n\n\t\t\tFor mothers who breastfeed, experts advise feeding their babies only breast milk for the first 6 months—no other foods or drinks during this time. Experts suggest that those women continue breastfeeding at least until their baby reaches 12 months.\n\n\t\t\tCalorie needs when you’re breastfeeding depend on how much body fat you have and how active you are. Talk with your health care professional about your calorie needs while you are breastfeeding.</item>
+    </string-array>
+    <string-array name="data_photo">
+        <item>@drawable/tips_1</item>
+        <item>@drawable/tips_2</item>
+        <item>@drawable/tips_3</item>
+        <item>@drawable/tips_4</item>
+        <item>@drawable/tips_5</item>
+        <item>@drawable/tips_6</item>
+    </string-array>
+</resources>
