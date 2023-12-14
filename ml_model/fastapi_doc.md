@@ -10,7 +10,7 @@ Berikut adalah dokumentasi dalam format Markdown untuk FastAPI:
 
 ```json
 {
-  "features": [Age , Pregnancy Duration , Weight (kg) , Height (cm) , BMI Score , Arm Circumference , Fundus Height , Heart Rate , Risk]
+  "features": [Age , Pregnancy Duration , Weight (kg) , Height (cm) , BMI Score , Arm Circumference , Fundus Height , Heart Rate]
 }
 ```
 
