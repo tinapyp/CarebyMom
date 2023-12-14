@@ -1,0 +1,62 @@
+# Direktori dan file sistem
+node_modules/
+dist/
+.cache/
+logs/
+temp/
+*.log
+*.log.*
+*.swp
+.DS_Store
+
+# Berkas konfigurasi
+*/env
+.env
+.env.local
+.env.*.local
+
+# Dependensi manajemen proyek
+package-lock.json
+yarn.lock
+
+# Berkas dan direktori build
+build/
+out/
+build-*/
+
+# Berkas editor/IDE
+.vscode/
+.idea/
+
+# Berkas log dan data sementara
+logs/
+*.pid
+*.seed
+*.pid.lock
+
+# Berkas konfigurasi lokal
+.config/
+
+# Berkas konfigurasi sistem operasi
+Thumbs.db
+.DS_Store
+
+# Berkas pribadi
+*.secret
+*.key
+*.pem
+
+# Berkas hasil linting dan testing
+*.eslintcache
+*.sonar/
+coverage/
+
+# Berkas konfigurasi editor/IDE
+.editorconfig
+
+# Berkas konfigurasi proyek
+.travis.yml
+appveyor.yml
+
+# Berkas proyek khusus
+yarn-error.log
