@@ -104,4 +104,4 @@ Untuk mendeploy aplikasi FastAPI ini menggunakan Docker, ikuti langkah-langkah b
     docker run -p 8000:8000 nama_image
     ```
 
-Aplikasi FastAPI sekarang dapat diakses melalui `http://localhost:4000`. Pastikan untuk mengganti `nama_image` dengan nama yang sesuai untuk Docker image Anda.
+Aplikasi FastAPI sekarang dapat diakses melalui `http://localhost:8000`. Pastikan untuk mengganti `nama_image` dengan nama yang sesuai untuk Docker image Anda.
