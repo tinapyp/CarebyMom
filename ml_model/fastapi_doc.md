@@ -7,13 +7,15 @@ Berikut adalah dokumentasi dalam format Markdown untuk FastAPI:
 **Deskripsi**: Endpoint ini digunakan untuk melakukan prediksi berdasarkan fitur yang diberikan.
 
 **Request Body:**
+
 ```json
 {
-  "features": [float, float, ...]
+  "features": [Age , Pregnancy Duration , Weight (kg) , Height (cm) , BMI Score , Arm Circumference , Fundus Height , Heart Rate , Risk]
 }
 ```
 
 **Contoh Input:**
+
 ```json
 {
   "features": [25, 280, 60, 165, 22, 25, 30, 80]
@@ -21,6 +23,7 @@ Berikut adalah dokumentasi dalam format Markdown untuk FastAPI:
 ```
 
 **Response:**
+
 ```json
 {
   "prediction": int,
@@ -36,6 +39,7 @@ Berikut adalah dokumentasi dalam format Markdown untuk FastAPI:
 **Deskripsi**: Endpoint ini digunakan untuk mengevaluasi performa model yang telah di-train.
 
 **Response:**
+
 ```json
 {
   "train_accuracy": float,
@@ -80,28 +84,28 @@ Untuk mendeploy aplikasi FastAPI ini menggunakan Docker, ikuti langkah-langkah b
 
 2. Buat file `Dockerfile` di direktori yang sama dengan aplikasi FastAPI Anda:
 
-    ```dockerfile
-    FROM tiangolo/uvicorn-gunicorn-fastapi:python3.8
+   ```dockerfile
+   FROM tiangolo/uvicorn-gunicorn-fastapi:python3.8
 
-    WORKDIR /app
+   WORKDIR /app
 
-    COPY ./app /app
+   COPY ./app /app
 
-    RUN pip install -r requirements.txt
+   RUN pip install -r requirements.txt
 
-    CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8000"]
-    ```
+   CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8000"]
+   ```
 
 3. Jalankan perintah berikut di terminal untuk membangun Docker image:
 
-    ```bash
-    docker build -t nama_image .
-    ```
+   ```bash
+   docker build -t nama_image .
+   ```
 
 4. Setelah berhasil dibangun, jalankan container dengan perintah:
 
-    ```bash
-    docker run -p 8000:8000 nama_image
-    ```
+   ```bash
+   docker run -p 8000:8000 nama_image
+   ```
 
 Aplikasi FastAPI sekarang dapat diakses melalui `http://localhost:8000`. Pastikan untuk mengganti `nama_image` dengan nama yang sesuai untuk Docker image Anda.
