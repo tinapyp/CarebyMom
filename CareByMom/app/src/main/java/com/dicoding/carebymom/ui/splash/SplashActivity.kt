@@ -4,7 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.dicoding.carebymom.R
-import com.dicoding.carebymom.ui.MainActivity
+import com.dicoding.carebymom.ui.main.MainActivity
 import java.util.Timer
 import java.util.TimerTask
 
