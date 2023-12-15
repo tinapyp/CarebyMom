@@ -1,4 +1,4 @@
-Age,Pregnancy Duration,Weight(kg),Height(cm),BMI Score,Arm Circumference,Fundus Height,Heart Rate,Risk
+Age,Pregnancy_Duration,Weight_kg,Height_cm,BMI_Score,Arm_Circumference,Fundus_Height,Heart_Rate,Risk
 32,15,58 ,169 ,20.14273385,24 ,25 ,68,Normal
 30,15,68 ,168 ,23.89109847,24 ,32 ,61,Normal
 25,8,74 ,185 ,21.54583894,23 ,32 ,90,Normal
