@@ -1,4 +1,4 @@
-package com.dicoding.carebymom.ui.momstips
+package com.dicoding.carebymom.UI_for_apps.momstips
 
 import android.content.Intent
 import android.os.Bundle
@@ -12,7 +12,7 @@ import com.dicoding.carebymom.R
 import com.dicoding.carebymom.adapter.ListTipsAdapter
 import com.dicoding.carebymom.data.Tips
 import com.dicoding.carebymom.databinding.FragmentTipsBinding
-import com.dicoding.carebymom.ui.detail.DetailTipsActivity
+import com.dicoding.carebymom.UI_for_apps.detail.DetailTipsActivity
 
 class TipsFragment : Fragment() {
     private var _binding: FragmentTipsBinding? = null

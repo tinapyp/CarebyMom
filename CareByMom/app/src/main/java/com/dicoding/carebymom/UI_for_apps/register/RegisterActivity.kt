@@ -1,4 +1,4 @@
-package com.dicoding.carebymom.ui.register
+package com.dicoding.carebymom.UI_for_apps.register
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -12,8 +12,8 @@ import androidx.lifecycle.lifecycleScope
 import com.dicoding.carebymom.R
 import com.dicoding.carebymom.data.response.RegisterResponse
 import com.dicoding.carebymom.databinding.ActivityRegisterBinding
-import com.dicoding.carebymom.ui.ViewModelFactory
-import com.dicoding.carebymom.ui.login.LoginActivity
+import com.dicoding.carebymom.UI_for_apps.ViewModelFactory
+import com.dicoding.carebymom.UI_for_apps.login.LoginActivity
 import com.dicoding.carebymom.utils.DatePickerFragment
 import com.google.gson.Gson
 import kotlinx.coroutines.launch

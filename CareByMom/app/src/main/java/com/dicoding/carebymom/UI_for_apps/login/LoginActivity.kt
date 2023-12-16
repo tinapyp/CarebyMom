@@ -1,4 +1,4 @@
-package com.dicoding.carebymom.ui.login
+package com.dicoding.carebymom.UI_for_apps.login
 
 import android.content.Intent
 import android.os.Build
@@ -13,10 +13,10 @@ import androidx.lifecycle.lifecycleScope
 import com.dicoding.carebymom.R
 import com.dicoding.carebymom.data.response.ErrorResponse
 import com.dicoding.carebymom.databinding.ActivityLoginBinding
-import com.dicoding.carebymom.pref.UserModel
-import com.dicoding.carebymom.ui.ViewModelFactory
-import com.dicoding.carebymom.ui.main.MainActivity
-import com.dicoding.carebymom.ui.register.RegisterActivity
+import com.dicoding.carebymom.data.model.UserModel
+import com.dicoding.carebymom.UI_for_apps.ViewModelFactory
+import com.dicoding.carebymom.UI_for_apps.main.MainActivity
+import com.dicoding.carebymom.UI_for_apps.register.RegisterActivity
 import com.google.gson.Gson
 import kotlinx.coroutines.launch
 import retrofit2.HttpException
@@ -118,21 +118,4 @@ class LoginActivity : AppCompatActivity() {
         binding.loginButton.isEnabled = !isLoading
     }
 
-//    override fun onCreate(savedInstanceState: Bundle?) {
-//        super.onCreate(savedInstanceState)
-//
-//        binding = ActivityLoginBinding.inflate(layoutInflater)
-//        setContentView(binding.root)
-//
-//        binding.signUpBtn.setOnClickListener{
-//            val intent = Intent(this, RegisterActivity::class.java)
-//            startActivity(intent)
-//        }
-//
-//        binding.loginButton.setOnClickListener{
-//            val intent = Intent(this, MainActivity::class.java)
-//            startActivity(intent)
-//        }
-//
-//    }
 }

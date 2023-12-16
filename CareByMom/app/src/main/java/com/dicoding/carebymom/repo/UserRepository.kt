@@ -7,7 +7,8 @@ import com.dicoding.carebymom.data.api.ApiService
 import com.dicoding.carebymom.data.response.ErrorResponse
 import com.dicoding.carebymom.data.response.LoginResponse
 import com.dicoding.carebymom.data.response.RegisterResponse
-import com.dicoding.carebymom.pref.UserModel
+import com.dicoding.carebymom.data.model.UserModel
+import com.dicoding.carebymom.data.response.PredictResponse
 import com.dicoding.carebymom.pref.UserPreference
 import com.google.gson.Gson
 import kotlinx.coroutines.flow.Flow
@@ -28,6 +29,31 @@ class UserRepository private constructor(
     suspend fun register(username: String, email: String, password: String): RegisterResponse {
         return apiService.register(username, email, password)
     }
+
+    suspend fun checkup(
+        age: Double,
+        pregnancyDuration: Double,
+        weight: Double,
+        height: Double,
+        bmi: Double,
+        armCircum: Double,
+        fundusHeight: Double,
+        heartRate: Double
+    ): PredictResponse {
+        val request = ApiService.PredictRequest(
+            Age = age,
+            Pregnancy_Duration = pregnancyDuration,
+            Weight_kg = weight,
+            Height_cm = height,
+            BMI_Score = bmi,
+            Arm_Circumference = armCircum,
+            Fundus_Height = fundusHeight,
+            Heart_Rate = heartRate
+        )
+
+        return apiService.predict(request)
+    }
+
 
     fun login(username: String, password: String) {
         _isLoading.value = true
@@ -56,7 +82,8 @@ class UserRepository private constructor(
 
     private fun extractErrorMessage(response: Response<*>): String {
         return try {
-            val errorObject = Gson().fromJson(response.errorBody()?.charStream(), ErrorResponse::class.java)
+            val errorObject =
+                Gson().fromJson(response.errorBody()?.charStream(), ErrorResponse::class.java)
             errorObject.message ?: "Login failed: ${response.message()}"
         } catch (e: Exception) {
             "Login failed: ${response.message()}"
@@ -81,7 +108,7 @@ class UserRepository private constructor(
         fun getInstance(
             apiService: ApiService,
             userPreference: UserPreference
-        ): UserRepository = UserRepository( apiService, userPreference)
+        ): UserRepository = UserRepository(apiService, userPreference)
 
         fun clearInstance() {
             instance = null

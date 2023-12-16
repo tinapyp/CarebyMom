@@ -1,10 +1,10 @@
-package com.dicoding.carebymom.ui.main
+package com.dicoding.carebymom.UI_for_apps.main
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.asLiveData
 import androidx.lifecycle.viewModelScope
-import com.dicoding.carebymom.pref.UserModel
+import com.dicoding.carebymom.data.model.UserModel
 import com.dicoding.carebymom.repo.UserRepository
 import kotlinx.coroutines.launch
 

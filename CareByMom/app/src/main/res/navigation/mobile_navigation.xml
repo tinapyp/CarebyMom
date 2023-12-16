@@ -7,25 +7,25 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.dicoding.carebymom.ui.home.HomeFragment"
+        android:name="com.dicoding.carebymom.UI_for_apps.home.HomeFragment"
         android:label="@string/home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/navigation_tips"
-        android:name="com.dicoding.carebymom.ui.momstips.TipsFragment"
+        android:name="com.dicoding.carebymom.UI_for_apps.momstips.TipsFragment"
         android:label="@string/mom_s_tips"
         tools:layout="@layout/fragment_tips" />
 
     <fragment
         android:id="@+id/navigation_health"
-        android:name="com.dicoding.carebymom.ui.health.HealthFragment"
+        android:name="com.dicoding.carebymom.UI_for_apps.health.HealthFragment"
         android:label="@string/health_care"
         tools:layout="@layout/fragment_health" />
 
     <fragment
         android:id="@+id/navigation_profile"
-        android:name="com.dicoding.carebymom.ui.profile.ProfileFragment"
+        android:name="com.dicoding.carebymom.UI_for_apps.profile.ProfileFragment"
         android:label="@string/profile"
         tools:layout="@layout/fragment_profile"/>
 </navigation>

@@ -1,4 +1,4 @@
-package com.dicoding.carebymom.ui.profile
+package com.dicoding.carebymom.UI_for_apps.profile
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,8 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import com.dicoding.carebymom.databinding.FragmentProfileBinding
-import com.dicoding.carebymom.ui.ViewModelFactory
-import com.dicoding.carebymom.ui.main.MainViewModel
+import com.dicoding.carebymom.UI_for_apps.ViewModelFactory
+import com.dicoding.carebymom.UI_for_apps.main.MainViewModel
 
 class ProfileFragment : Fragment() {
 

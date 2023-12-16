@@ -1,4 +1,4 @@
-package com.dicoding.carebymom.ui.main
+package com.dicoding.carebymom.UI_for_apps.main
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -8,8 +8,8 @@ import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
 import com.dicoding.carebymom.R
 import com.dicoding.carebymom.databinding.ActivityMainBinding
-import com.dicoding.carebymom.ui.ViewModelFactory
-import com.dicoding.carebymom.ui.login.LoginActivity
+import com.dicoding.carebymom.UI_for_apps.ViewModelFactory
+import com.dicoding.carebymom.UI_for_apps.login.LoginActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
