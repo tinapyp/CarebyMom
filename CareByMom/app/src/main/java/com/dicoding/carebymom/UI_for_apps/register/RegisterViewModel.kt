@@ -1,4 +1,4 @@
-package com.dicoding.carebymom.ui.register
+package com.dicoding.carebymom.UI_for_apps.register
 
 import androidx.lifecycle.ViewModel
 import com.dicoding.carebymom.data.response.RegisterResponse

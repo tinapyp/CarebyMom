@@ -1,4 +1,4 @@
-package com.dicoding.carebymom.ui.home
+package com.dicoding.carebymom.UI_for_apps.home
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

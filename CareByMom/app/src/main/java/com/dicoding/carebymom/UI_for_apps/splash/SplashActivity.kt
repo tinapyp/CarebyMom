@@ -1,10 +1,10 @@
-package com.dicoding.carebymom.ui.splash
+package com.dicoding.carebymom.UI_for_apps.splash
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.dicoding.carebymom.R
-import com.dicoding.carebymom.ui.main.MainActivity
+import com.dicoding.carebymom.UI_for_apps.main.MainActivity
 import java.util.Timer
 import java.util.TimerTask
 

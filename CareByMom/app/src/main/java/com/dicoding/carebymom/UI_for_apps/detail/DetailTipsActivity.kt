@@ -1,4 +1,4 @@
-package com.dicoding.carebymom.ui.detail
+package com.dicoding.carebymom.UI_for_apps.detail
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

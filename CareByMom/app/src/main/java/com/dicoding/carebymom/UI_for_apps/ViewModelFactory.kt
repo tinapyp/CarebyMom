@@ -1,13 +1,14 @@
-package com.dicoding.carebymom.ui
+package com.dicoding.carebymom.UI_for_apps
 
 import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
+import com.dicoding.carebymom.UI_for_apps.health.HealthViewModel
 import com.dicoding.carebymom.pref.Injection
 import com.dicoding.carebymom.repo.UserRepository
-import com.dicoding.carebymom.ui.login.LoginViewModel
-import com.dicoding.carebymom.ui.main.MainViewModel
-import com.dicoding.carebymom.ui.register.RegisterViewModel
+import com.dicoding.carebymom.UI_for_apps.login.LoginViewModel
+import com.dicoding.carebymom.UI_for_apps.main.MainViewModel
+import com.dicoding.carebymom.UI_for_apps.register.RegisterViewModel
 
 class ViewModelFactory(private val repository: UserRepository) : ViewModelProvider.NewInstanceFactory() {
 
@@ -22,6 +23,9 @@ class ViewModelFactory(private val repository: UserRepository) : ViewModelProvid
             }
             modelClass.isAssignableFrom(MainViewModel::class.java) -> {
                 MainViewModel(repository) as T
+            }
+            modelClass.isAssignableFrom(HealthViewModel::class.java) -> {
+                HealthViewModel(repository) as T
             }
             else -> throw IllegalArgumentException("Unknown ViewModel class: " + modelClass.name)
         }

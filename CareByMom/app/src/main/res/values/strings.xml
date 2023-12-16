@@ -27,10 +27,10 @@
     <string name="age">Mother\'s Age (Years)</string>
     <string name="body_temperature_celcius">Body Temperature (Celcius)</string>
     <string name="weight_kg">Weight (Kg)</string>
-    <string name="abdominal_circumference_cm">Abdominal Circumference (Cm)</string>
+    <string name="fundus_height">Fundus Height (Cm)</string>
     <string name="check_up">Check Up</string>
     <string name="test_result">Test result,</string>
-    <string name="pregnancy_age">Pregnancy Age (Weeks)</string>
+    <string name="pregnancy_duration">Pregnancy Duration (Days)</string>
     <string name="arm_circumference_cm">Arm Circumference (Cm)</string>
     <string name="height_cm">Height (Cm)</string>
     <string name="heart_beat_per_minute">Heart Beat Per Minute</string>
@@ -41,6 +41,7 @@
     <string name="email_cannot_be_empty">Email cannot be empty</string>
     <string name="register_success">Register Success</string>
     <string name="continuee">Continue</string>
+    <string name="this_field_cannot_be_empty">This field cannot be empty</string>
     <string-array name="data_name">
         <item>Why is gaining a healthy amount of weight during pregnancy important?</item>
         <item>How much should I eat and drink?</item>

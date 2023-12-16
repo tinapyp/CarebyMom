@@ -1,4 +1,4 @@
-package com.dicoding.carebymom.pref
+package com.dicoding.carebymom.data.model
 
 data class UserModel(
     val username: String,
