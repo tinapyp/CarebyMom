@@ -38,6 +38,28 @@ class LoginActivity : AppCompatActivity() {
 
         setupView()
         setupAction()
+        setupObservers()
+    }
+
+    private fun setupObservers() {
+        viewModel.isLoading.observe(this) {
+            showLoading(it)
+        }
+
+        viewModel.loginResponse.observe(this) { loginResponse ->
+            if (loginResponse.message == "Login successful") {
+                showToast(loginResponse.message)
+                save(
+                    UserModel(
+                        loginResponse.user?.username.toString(),
+                        loginResponse.user?.token.toString(),
+                        true
+                    )
+                )
+            } else {
+                showToast(loginResponse.message)
+            }
+        }
     }
 
     private fun setupView() {
@@ -76,20 +98,6 @@ class LoginActivity : AppCompatActivity() {
 
                 viewModel.login(username, password)
 
-                viewModel.loginResponse.observe(this) { loginResponse ->
-                    if (loginResponse.message == "Login successful") {
-                        showToast(loginResponse.message)
-                        save(
-                            UserModel(
-                                loginResponse.user?.username.toString(),
-                                loginResponse.user?.token.toString(),
-                                true
-                            )
-                        )
-                    }else{
-                        showToast(loginResponse.message)
-                    }
-                }
             } catch (e: HttpException) {
                 val jsonInString = e.response()?.errorBody()?.string()
                 val errorBody = Gson().fromJson(jsonInString, ErrorResponse::class.java)
