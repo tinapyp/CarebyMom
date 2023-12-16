@@ -65,7 +65,7 @@ class UserRepository private constructor(
                     _loginResponse.value = response.body()
                 } else {
                     val errorMessage = extractErrorMessage(response)
-                    Log.e("StoryRepository", errorMessage)
+                    Log.e("UserRepo", errorMessage)
                     _isLoading.value = false
                     _loginResponse.value = LoginResponse(message = errorMessage)
                 }
@@ -73,7 +73,7 @@ class UserRepository private constructor(
 
             override fun onFailure(call: Call<LoginResponse>, t: Throwable) {
                 val errorMessage = "Login failed: ${t.message}"
-                Log.e("StoryRepository", errorMessage)
+                Log.e("UserRepo", errorMessage)
                 _isLoading.value = false
                 _loginResponse.value = LoginResponse(message = errorMessage)
             }
