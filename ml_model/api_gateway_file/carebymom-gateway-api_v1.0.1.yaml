@@ -1,11 +1,11 @@
 swagger: "2.0"
 info:
   version: 1.0.0
-  title: API Gateway dengan FastAPI dan REST API
+  title: API Gateway with FastAPI and REST API
 paths:
   /predict:
     post:
-      summary: Kirim permintaan ke backend FastAPI
+      summary: Send a request to the FastAPI backend
       operationId: postPredicts
       consumes:
         - application/json
@@ -14,29 +14,37 @@ paths:
       parameters:
         - in: body
           name: body
-          description: Permintaan untuk backend FastAPI
+          description: Request for the FastAPI backend
           required: true
           schema:
             type: object
             properties:
               features:
                 type: array
-                items: number
+                items:
+                  type: number
+                example: [25, 280, 60, 165, 22, 25, 30, 80]
       responses:
         "200":
-          description: Respons dari backend FastAPI
+          description: Response from the FastAPI backend
           schema:
             type: object
             properties:
-              prediction: integer
-              probability: number
-              advice: string
+              prediction:
+                type: integer
+                example: 1
+              probability:
+                type: number
+                example: 0.85
+              advice:
+                type: string
+                example: "Rekomendasi penggunaan"
       x-google-backend:
         address: "https://link-api/predict"
 
   /signup:
     post:
-      summary: Pendaftaran Pengguna
+      summary: User Signup
       tags:
         - "Authentication"
       operationId: signUpUser
@@ -47,38 +55,46 @@ paths:
       parameters:
         - in: body
           name: body
-          description: Data pendaftaran pengguna
+          description: User signup data
           required: true
           schema:
             type: object
             properties:
-              username: string
-              email: string
-              password: string
+              username:
+                type: string
+              email:
+                type: string
+              password:
+                type: string
       responses:
         200:
-          description: Pendaftaran berhasil
+          description: Signup successful
           schema:
             type: object
             properties:
-              message: string
+              message:
+                type: string
               user:
                 type: object
                 properties:
-                  id: integer
-                  username: string
-                  email: string
-                  token: string
+                  id:
+                    type: integer
+                  username:
+                    type: string
+                  email:
+                    type: string
+                  token:
+                    type: string
         400:
-          description: Payload permintaan tidak valid
+          description: Invalid request payload
         500:
-          description: Kesalahan Internal Server
+          description: Internal Server Error
       x-google-backend:
         address: "https://link-api/signup"
 
   /login:
     post:
-      summary: Masuk Pengguna
+      summary: User Login
       tags:
         - "Authentication"
       operationId: loginUser
@@ -89,37 +105,44 @@ paths:
       parameters:
         - in: body
           name: body
-          description: Data login pengguna
+          description: User login data
           required: true
           schema:
             type: object
             properties:
-              username: string
-              password: string
+              username:
+                type: string
+              password:
+                type: string
       responses:
         200:
-          description: Login berhasil
+          description: Login successful
           schema:
             type: object
             properties:
-              message: string
+              message:
+                type: string
               user:
                 type: object
                 properties:
-                  id: integer
-                  username: string
-                  email: string
-                  token: string
+                  id:
+                    type: integer
+                  username:
+                    type: string
+                  email:
+                    type: string
+                  token:
+                    type: string
         401:
-          description: Nama pengguna dan/atau kata sandi tidak valid
+          description: Invalid username and/or password
         500:
-          description: Kesalahan Internal Server
+          description: Internal Server Error
       x-google-backend:
         address: "https://link-api/login"
 
   /logout:
     post:
-      summary: Keluar Pengguna
+      summary: User Logout
       tags:
         - "Authentication"
       operationId: logoutUser
@@ -130,22 +153,22 @@ paths:
       parameters:
         - in: header
           name: Authorization
-          description: Token JWT
+          description: JWT token
           required: true
           type: string
       responses:
         200:
-          description: Keluar berhasil
+          description: Logout successful
         401:
-          description: Tidak diizinkan
+          description: Unauthorized
         500:
-          description: Kesalahan Internal Server
+          description: Internal Server Error
       x-google-backend:
         address: "https://link-api/logout"
 
   /change-password:
     post:
-      summary: Ubah Kata Sandi Pengguna
+      summary: Change User Password
       tags:
         - "Authentication"
       operationId: changeUserPassword
@@ -156,24 +179,26 @@ paths:
       parameters:
         - in: header
           name: Authorization
-          description: Token JWT
+          description: JWT token
           required: true
           type: string
         - in: body
           name: body
-          description: Data perubahan kata sandi
+          description: Change password data
           required: true
           schema:
             type: object
             properties:
-              currentPassword: string
-              newPassword: string
+              currentPassword:
+                type: string
+              newPassword:
+                type: string
       responses:
         200:
-          description: Kata sandi berhasil diubah
+          description: Password changed successfully
         401:
-          description: Tidak diizinkan atau Kata sandi saat ini tidak valid
+          description: Unauthorized or Invalid current password
         500:
-          description: Kesalahan Internal Server
+          description: Internal Server Error
       x-google-backend:
         address: "https://link-api/change-password"
