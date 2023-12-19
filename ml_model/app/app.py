@@ -88,9 +88,9 @@ async def predict(item: Item):
         # Function to provide advice based on prediction
         def provide_advice(pred):
             if pred == 0:
-                return "Risiko kehamilan komplikasi rendah. Lanjutkan perawatan prenatal yang baik."
+                return "The risk of pregnancy complications is low. Continue good prenatal care."
             elif pred == 1:
-                return "Risiko kehamilan komplikasi tinggi. Segera konsultasikan dengan dokter untuk perawatan lebih lanjut."
+                return "The risk of pregnancy complications is high. Immediately consult a doctor for further treatment."
 
         advice = provide_advice(int(prediction[0]))
 
