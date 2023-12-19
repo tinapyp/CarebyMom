@@ -9,7 +9,9 @@ from sklearn.preprocessing import StandardScaler
 from typing import Dict
 
 # Load dataset
-df = pd.read_csv("data/datagenerated.csv", sep=",")
+df = pd.read_csv(
+    "/home/tinapyp/Development/CarebyMom/ml_model/app/data/datagenerated.csv", sep=","
+)
 
 # Drop duplicated rows
 df = df.drop_duplicates()
@@ -35,8 +37,18 @@ preprocessor = ColumnTransformer(
 X_train_transformed = preprocessor.fit_transform(X_train)
 X_test_transformed = preprocessor.transform(X_test)
 
-# Create Random Forest object
-random_forest = RandomForestClassifier()
+# Updated Best Hyperparameters
+best_hyperparameters = {
+    "max_depth": 12,
+    "min_samples_leaf": 6,
+    "min_samples_split": 10,
+    "n_estimators": 50,
+}
+
+# Create Random Forest object with updated best hyperparameters and class_weight
+random_forest = RandomForestClassifier(
+    **best_hyperparameters, class_weight="balanced", random_state=42
+)
 
 # Train model
 random_forest.fit(X_train_transformed, y_train)
