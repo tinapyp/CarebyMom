@@ -1,17 +1,17 @@
+import joblib
 import pandas as pd
-from fastapi import FastAPI, HTTPException
-from pydantic import BaseModel
-from sklearn.compose import ColumnTransformer
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import confusion_matrix, accuracy_score, classification_report
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
-from typing import Dict
-import joblib
+from imblearn.over_sampling import SMOTE
+
+# Load dataset
+# Anda perlu memuat kembali dataset dan melakukan preprocessing sesuai dengan yang dilakukan sebelumnya
 
 # Load dataset
 df = pd.read_csv(
-    "/home/tinapyp/Development/CarebyMom/ml_model/app/data/datagenerated.csv", sep=","
+    "/home/tinapyp/Development/CarebyMom/ml_model/training/data/datagenerated.csv",
+    sep=",",
 )
 
 # Drop duplicated rows
@@ -28,34 +28,20 @@ X_train, X_test, y_train, y_test = train_test_split(
     X, y, test_size=0.3, random_state=42
 )
 
-# Define ColumnTransformer with StandardScaler
-numeric_features = X.columns
-preprocessor = ColumnTransformer(
-    transformers=[("num", StandardScaler(), numeric_features)]
+# Handling Imbalanced Data with SMOTE
+smote = SMOTE(random_state=42)
+X_train_resampled, y_train_resampled = smote.fit_resample(X_train, y_train)
+
+# Train model with the best hyperparameters
+best_rf_model = RandomForestClassifier(
+    max_depth=15, min_samples_leaf=2, min_samples_split=5, n_estimators=250
 )
+best_rf_model.fit(X_train_resampled, y_train_resampled)
 
-# Transform data
-X_train_transformed = preprocessor.fit_transform(X_train)
-X_test_transformed = preprocessor.transform(X_test)
-
-# Updated Best Hyperparameters
-best_hyperparameters = {
-    "max_depth": 12,
-    "min_samples_leaf": 6,
-    "min_samples_split": 10,
-    "n_estimators": 50,
-}
-
-# Create Random Forest object with updated best hyperparameters and class_weight
-random_forest = RandomForestClassifier(
-    **best_hyperparameters, class_weight="balanced", random_state=42
-)
-
-# Train model
-random_forest.fit(X_train_transformed, y_train)
-
-# Save the trained model using joblib
+# Save the model to a file using joblib
 model_filename = (
     "/home/tinapyp/Development/CarebyMom/ml_model/app/model/random_forest_model.joblib"
 )
-joblib.dump(random_forest, model_filename)
+joblib.dump(best_rf_model, model_filename)
+
+print(f"Model telah disimpan dalam file: {model_filename}")
