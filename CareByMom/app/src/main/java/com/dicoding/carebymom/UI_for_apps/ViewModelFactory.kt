@@ -4,6 +4,7 @@ import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.dicoding.carebymom.UI_for_apps.health.HealthViewModel
+import com.dicoding.carebymom.UI_for_apps.home.HomeViewModel
 import com.dicoding.carebymom.pref.Injection
 import com.dicoding.carebymom.repo.UserRepository
 import com.dicoding.carebymom.UI_for_apps.login.LoginViewModel
@@ -26,6 +27,9 @@ class ViewModelFactory(private val repository: UserRepository) : ViewModelProvid
             }
             modelClass.isAssignableFrom(HealthViewModel::class.java) -> {
                 HealthViewModel(repository) as T
+            }
+            modelClass.isAssignableFrom(HomeViewModel::class.java) -> {
+                HomeViewModel(repository) as T
             }
             else -> throw IllegalArgumentException("Unknown ViewModel class: " + modelClass.name)
         }

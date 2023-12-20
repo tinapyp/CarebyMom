@@ -4,6 +4,8 @@
     <color name="white">#FFFFFFFF</color>
     <color name="pink1">#F267AB</color>
     <color name="pink2">#FFC0D9</color>
+    <color name="brown">#E3E3E3</color>
     <color name="purple1">#A459D0</color>
+    <color name="outline_color">#80000000</color>
 
 </resources>

@@ -13,8 +13,11 @@ data class LoginResponse(
 
 data class LoginResult(
 
-	@field:SerializedName("password")
-	val password: String? = null,
+	@field:SerializedName("periodTime")
+	val periodTime: Long? = null,
+
+	@field:SerializedName("id")
+	val id: Int? = null,
 
 	@field:SerializedName("email")
 	val email: String? = null,

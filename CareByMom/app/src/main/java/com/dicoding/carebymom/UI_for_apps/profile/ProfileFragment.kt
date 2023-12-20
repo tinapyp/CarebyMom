@@ -5,7 +5,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.viewModels
+import com.dicoding.carebymom.R
 import com.dicoding.carebymom.databinding.FragmentProfileBinding
 import com.dicoding.carebymom.UI_for_apps.ViewModelFactory
 import com.dicoding.carebymom.UI_for_apps.main.MainViewModel
@@ -33,8 +35,18 @@ class ProfileFragment : Fragment() {
             binding.tvUsername.text = user.username
         }
 
-        binding.logoutButton.setOnClickListener{
-            viewModel.logout()
+        binding.logoutButton.setOnClickListener {
+            val builder = AlertDialog.Builder(requireActivity())
+            builder.setMessage(getString(R.string.are_you_sure_want_to_logout))
+            builder.setPositiveButton(getString(R.string.yes)) { dialog, _ ->
+                viewModel.logout()
+                dialog.dismiss()
+            }
+            builder.setNegativeButton(getString(R.string.no)) { dialog, _ ->
+                dialog.dismiss()
+            }
+            val dialog = builder.create()
+            dialog.show()
         }
     }
 

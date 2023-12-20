@@ -1,12 +1,15 @@
 package com.dicoding.carebymom.UI_for_apps.health
 
 import android.content.Intent
+import android.os.Build
 import android.os.Bundle
+import android.text.Editable
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.annotation.RequiresApi
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import com.dicoding.carebymom.R
@@ -15,14 +18,25 @@ import com.dicoding.carebymom.UI_for_apps.result.TestResultActivity
 import com.dicoding.carebymom.databinding.FragmentHealthBinding
 import kotlinx.coroutines.launch
 import retrofit2.HttpException
+import java.text.SimpleDateFormat
+import java.time.Instant
+import java.time.ZoneId
+import java.time.temporal.ChronoUnit
+import java.util.Date
+import java.util.Locale
 
 class HealthFragment : Fragment() {
     private var _binding: FragmentHealthBinding? = null
     private val viewModel by viewModels<HealthViewModel> {
         ViewModelFactory.getInstance(requireContext())
     }
-
     private val binding get() = _binding!!
+    private val currentDate =
+        SimpleDateFormat("EEEE, d MMMM yyyy", Locale.getDefault()).format(Date())
+    val dateFormat = SimpleDateFormat("EEEE, d MMMM yyyy", Locale.getDefault())
+    val date = dateFormat.parse(currentDate)
+    @RequiresApi(Build.VERSION_CODES.O)
+    val localDate = date?.toInstant()?.atZone(ZoneId.systemDefault())?.toLocalDate()
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -35,13 +49,43 @@ class HealthFragment : Fragment() {
         return root
     }
 
+    @RequiresApi(Build.VERSION_CODES.O)
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        viewModel.getSession().observe(requireActivity()) { user ->
+            val sessionDate =
+                Instant.ofEpochMilli(user.periodTime.toLong()).atZone(ZoneId.systemDefault())
+                    .toLocalDate()
+
+            val pregnancyAge = ChronoUnit.DAYS.between(sessionDate, localDate).toInt()
+            binding.PregnancyAgeEditText.text = Editable.Factory.getInstance().newEditable(pregnancyAge.toString())
+
+        }
 
         setupAction()
     }
 
     private fun setupAction() {
+
+        binding.armHelp.setOnClickListener {
+            val intent = Intent(requireContext(), HealthHelpActivity::class.java)
+            intent.putExtra("idHelp", "arm")
+            startActivity(intent)
+        }
+
+        binding.fundusHelp.setOnClickListener {
+            val intent = Intent(requireContext(), HealthHelpActivity::class.java)
+            intent.putExtra("idHelp", "fundus")
+            startActivity(intent)
+        }
+
+        binding.hearthelp.setOnClickListener {
+            val intent = Intent(requireContext(), HealthHelpActivity::class.java)
+            intent.putExtra("idHelp", "heart")
+            startActivity(intent)
+        }
+
         binding.checkUpButton.setOnClickListener {
             showLoading(true)
             val motherAge = binding.AgeEditText.text.toString()
@@ -82,7 +126,7 @@ class HealthFragment : Fragment() {
                         heartRate.toDouble()
                     )
                     showLoading(false)
-                    val intent = Intent(requireContext(),TestResultActivity::class.java)
+                    val intent = Intent(requireContext(), TestResultActivity::class.java)
                     val advice = response.advice
                     intent.putExtra("advice", advice)
                     startActivity(intent)
