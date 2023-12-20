@@ -22,7 +22,7 @@ object ApiConfig {
             .addInterceptor(authInterceptor)
             .build()
         val retrofit = Retrofit.Builder()
-            .baseUrl("https://carebymom-api-v1-0-0-4zuyplvu.an.gateway.dev")
+            .baseUrl("https://carebymom-api-v2-d42ogfjt.an.gateway.dev")
             .addConverterFactory(GsonConverterFactory.create())
             .client(client)
             .build()

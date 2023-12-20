@@ -1,31 +1,15 @@
 package com.dicoding.carebymom.UI_for_apps.home
 
 import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import java.text.SimpleDateFormat
-import java.util.Date
-import java.util.Locale
+import androidx.lifecycle.asLiveData
+import com.dicoding.carebymom.data.model.UserModel
+import com.dicoding.carebymom.repo.UserRepository
 
-class HomeViewModel : ViewModel() {
+class HomeViewModel (private var repository: UserRepository) : ViewModel() {
 
-    private val _textDate = MutableLiveData<String>().apply {
-        val currentDate = SimpleDateFormat("EEEE, \nd MMMM yyyy", Locale.getDefault()).format(Date())
-        value = "$currentDate"
+    fun getSession(): LiveData<UserModel> {
+        return repository.getSession().asLiveData()
     }
-
-    private val _textDays = MutableLiveData<String>().apply {
-        val currentDays = "120"
-        value = "$currentDays\nDays"
-    }
-
-    private val _textGrowth = MutableLiveData<String>().apply {
-        val growth = "Babies can already eat and earn their own money."
-        value = "$growth"
-    }
-
-    val textDate: LiveData<String> = _textDate
-    val textDays : LiveData<String> = _textDays
-    val textGrowth : LiveData<String> = _textGrowth
 
 }

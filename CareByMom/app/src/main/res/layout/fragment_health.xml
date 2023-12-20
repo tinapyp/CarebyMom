@@ -10,6 +10,7 @@
         android:layout_height="wrap_content"
         tools:context=".UI_for_apps.home.HomeFragment">
 
+
         <ProgressBar
             android:id="@+id/progressIndicator"
             style="?android:attr/progressBarStyle"
@@ -19,7 +20,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/WeightEditTextLayout"
             tools:visibility="visible" />
 
         <TextView
@@ -103,7 +104,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="number"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:background="@drawable/round_bg"
+                android:inputType="none"
                 android:textSize="16sp"
                 tools:ignore="SpeakableTextPresentCheck" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -308,6 +312,36 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/HeartBeatEditTextLayout" />
+
+        <ImageView
+            android:id="@+id/armHelp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/ic_help"
+            app:layout_constraintBottom_toBottomOf="@+id/tvArmCircum"
+            app:layout_constraintStart_toEndOf="@+id/tvArmCircum"
+            app:layout_constraintTop_toTopOf="@+id/tvArmCircum" />
+
+        <ImageView
+            android:id="@+id/fundusHelp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/ic_help"
+            app:layout_constraintBottom_toBottomOf="@+id/tvAbdominalCircumference"
+            app:layout_constraintStart_toEndOf="@+id/tvAbdominalCircumference"
+            app:layout_constraintTop_toTopOf="@+id/tvAbdominalCircumference" />
+
+        <ImageView
+            android:id="@+id/hearthelp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/ic_help"
+            app:layout_constraintBottom_toBottomOf="@+id/tvHeartBeat"
+            app:layout_constraintStart_toEndOf="@+id/tvHeartBeat"
+            app:layout_constraintTop_toTopOf="@+id/tvHeartBeat" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

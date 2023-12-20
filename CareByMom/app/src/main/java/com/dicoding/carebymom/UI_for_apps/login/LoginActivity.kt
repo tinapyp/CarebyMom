@@ -51,6 +51,9 @@ class LoginActivity : AppCompatActivity() {
                 showToast(loginResponse.message)
                 save(
                     UserModel(
+                        loginResponse.user?.periodTime.toString(),
+                        loginResponse.user?.id.toString(),
+                        loginResponse.user?.email.toString(),
                         loginResponse.user?.username.toString(),
                         loginResponse.user?.token.toString(),
                         true

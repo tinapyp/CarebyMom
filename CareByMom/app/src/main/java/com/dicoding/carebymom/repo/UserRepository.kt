@@ -15,6 +15,7 @@ import kotlinx.coroutines.flow.Flow
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import java.math.BigInteger
 
 class UserRepository private constructor(
     private val apiService: ApiService,
@@ -26,8 +27,8 @@ class UserRepository private constructor(
     var _isLoading = MutableLiveData<Boolean>()
     var isLoading: LiveData<Boolean> = _isLoading
 
-    suspend fun register(username: String, email: String, password: String): RegisterResponse {
-        return apiService.register(username, email, password)
+    suspend fun register(username: String, email: String, password: String, periodTime: BigInteger): RegisterResponse {
+        return apiService.register(username, email, password, periodTime)
     }
 
     suspend fun checkup(
