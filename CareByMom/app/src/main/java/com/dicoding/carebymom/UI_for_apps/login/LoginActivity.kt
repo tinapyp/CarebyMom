@@ -48,7 +48,7 @@ class LoginActivity : AppCompatActivity() {
 
         viewModel.loginResponse.observe(this) { loginResponse ->
             if (loginResponse.message == "Login successful") {
-                showToast(loginResponse.message)
+                showToast(getString(R.string.login_successful))
                 save(
                     UserModel(
                         loginResponse.user?.periodTime.toString(),

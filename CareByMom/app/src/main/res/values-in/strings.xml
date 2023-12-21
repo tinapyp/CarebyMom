@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CareByMom</string>
+    <string name="invalid_email_address">Alamat Email tidak valid</string>
+    <string name="invalid_password">Kata sandi kurang dari 8 karakter</string>
+    <string name="email">Email</string>
+    <string name="password">Kata Sandi</string>
+    <string name="login">Masuk</string>
+    <string name="dont_have_an_account">Belum memiliki akun?</string>
+    <string name="sign_up">Daftar</string>
+    <string name="register">Daftar,</string>
+    <string name="name">Nama</string>
+    <string name="already_have_an_account">Sudah memiliki akum?</string>
+    <string name="home">Home</string>
+    <string name="mom_s_tips">Mom\'s Tips</string>
+    <string name="health_care">Healthy Care</string>
+    <string name="profile">Profil</string>
+    <string name="date">Tanggal</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam justo metus, pharetra vitae placerat vitae, venenatis et risus. Donec purus massa, varius in interdum eu, dictum eu elit</string>
+    <string name="username">Username</string>
+    <string name="my_account">Akun Saya</string>
+    <string name="settings">Pengaturan</string>
+    <string name="help">Bantuan</string>
+    <string name="logout">Keluar</string>
+    <string name="gestational_age">Usia Kehamilan</string>
+    <string name="healthy_activities_for_pregnant_women">Aktivitas sehat untuk wanita hamil</string>
+    <string name="fill_the_data_below">Mohon isi data di bawah ini!</string>
+    <string name="age">Usia Ibu (Tahun)</string>
+    <string name="body_temperature_celcius">Suhu Tubuh (Celsius)</string>
+    <string name="weight_kg">Berat Badan (Kg)</string>
+    <string name="fundus_height">Tinggi Fundus (Cm)</string>
+    <string name="check_up">Periksa</string>
+    <string name="test_result">Hasil tes,</string>
+    <string name="pregnancy_duration">Usia kehamilan (Days)</string>
+    <string name="arm_circumference_cm">Lingkar Lengan (Cm)</string>
+    <string name="height_cm">Tinggi Badan (Cm)</string>
+    <string name="heart_beat_per_minute">Detak Jantung Per Menit</string>
+    <string name="last_period_time">Waktu haid terakhir</string>
+    <string name="pick_last_period_date">Pilih Tanggal Haid Terakhir</string>
+    <string name="username_cannot_be_empty">Username tidak boleh kosong</string>
+    <string name="password_cannot_be_empty">Kata sandi tidak boleh kosong</string>
+    <string name="email_cannot_be_empty">Email tidak boleh kosong</string>
+    <string name="register_success">Pendaftaran Berhasil</string>
+    <string name="continuee">Lanjut</string>
+    <string name="this_field_cannot_be_empty">Kolom ini tidak boleh kosong</string>
+    <string-array name="data_name">
+        <item>Mengapa mendapatkan jumlah berat badan yang sehat selama kehamilan penting?</item>
+        <item>Berapa banyak seharusnya saya makan dan minum?</item>
+        <item>Bagaimana jika saya seorang vegetarian?</item>
+        <item>Apakah saya memiliki kebutuhan nutrisi khusus sekarang setelah saya hamil?</item>
+        <item>Berapa banyak dan jenis aktivitas fisik yang dibutuhkan?</item>
+        <item>Bagaimana pemberian ASI dapat membantu?</item>
+    </string-array>
+    <string-array name="data_description">
+        <item>\t\t\tMendapatkan jumlah berat badan yang sesuai selama kehamilan membantu pertumbuhan bayi menjadi ukuran yang sehat. Namun, mendapatkan terlalu banyak atau terlalu sedikit berat badan dapat menyebabkan masalah kesehatan serius bagi Anda dan bayi Anda.\n\n\t\t\tMenurut para ahli, mendapatkan terlalu banyak berat badan selama kehamilan meningkatkan risiko terkena diabetes gestasional (diabetes selama kehamilan) dan tekanan darah tinggi selama kehamilan. Ini juga meningkatkan risiko Anda terkena diabetes tipe 2 dan tekanan darah tinggi di masa mendatang. Jika Anda kelebihan berat badan atau mengalami obesitas saat hamil, risiko masalah kesehatan Anda mungkin lebih tinggi. Anda juga mungkin lebih mungkin menjalani operasi caesar (C-section).\n\n\t\t\tMendapatkan jumlah berat badan yang sehat membantu Anda memiliki kehamilan dan persalinan yang lebih mudah. Ini juga dapat memudahkan Anda untuk kembali ke berat badan yang sehat setelah melahirkan. Penelitian menunjukkan bahwa jumlah berat badan yang direkomendasikan selama kehamilan juga dapat mengurangi kemungkinan Anda atau anak Anda mengalami obesitas dan masalah berat badan lainnya di masa mendatang.</item>
+        <item>\t\t\tMengonsumsi makanan sehat dan minuman rendah kalori, khususnya air, serta jumlah kalori yang tepat, dapat membantu Anda dan bayi Anda mendapatkan jumlah berat badan yang sesuai.\n\n\t\t\tBerapa banyak makanan dan berapa banyak kalori yang Anda butuhkan tergantung pada faktor seperti berat badan Anda sebelum hamil, usia Anda, dan seberapa cepat Anda mendapatkan berat badan. Jika Anda berada pada berat badan yang sehat, Centers for Disease Control and Prevention (CDC) menyatakan bahwa Anda tidak memerlukan kalori ekstra pada trimester pertama, sekitar 340 kalori ekstra per hari pada trimester kedua, dan sekitar 450 kalori ekstra per hari pada trimester ketiga. Anda mungkin juga tidak perlu kalori ekstra selama minggu-minggu terakhir kehamilan.\n\n\t\t\tPeriksalah dengan profesional kesehatan Anda mengenai penambahan berat badan Anda. Jika Anda tidak mendapatkan berat badan yang diperlukan, mungkin disarankan untuk mengonsumsi lebih banyak kalori. Jika Anda mendapatkan berat badan terlalu banyak, mungkin perlu mengurangi asupan kalori. Setiap wanita memiliki kebutuhan yang berbeda. Kebutuhan Anda juga bergantung pada apakah Anda kurang berat badan, berlebihan berat badan, atau mengalami obesitas sebelum hamil, atau jika Anda sedang mengandung lebih dari satu bayi.</item>
+        <item>\t\t\tRencana makanan vegetarian selama kehamilan dapat menjadi pilihan yang sehat. Pertimbangkan kualitas rencana makanan Anda dan bicarakan dengan profesional kesehatan Anda untuk memastikan Anda mendapatkan cukup kalsium, zat besi, protein, vitamin B12, vitamin D, dan nutrisi lain yang diperlukan. Profesional kesehatan Anda juga mungkin menyarankan Anda untuk mengonsumsi vitamin dan mineral yang akan membantu Anda memenuhi kebutuhan nutrisi Anda.</item>
+        <item>\t\t\tYa, selama kehamilan, Anda memerlukan lebih banyak vitamin dan mineral seperti folat, zat besi, dan kalsium.\n\n\t\t\tMendapatkan jumlah folat yang tepat sangat penting. Folat, sebuah vitamin B yang juga dikenal sebagai asam folat, dapat membantu mencegah kelainan bawaan. Sebelum hamil, Anda memerlukan 400 mcg per hari dari suplemen atau makanan yang diperkaya, selain folat yang Anda dapatkan secara alami dari makanan dan minuman. Selama kehamilan, Anda memerlukan 600 mcg. Saat menyusui, Anda memerlukan 500 mcg asam folat per hari. Makanan tinggi folat meliputi jus jeruk, stroberi, bayam, brokoli, kacang-kacangan, roti yang diperkaya, dan sereal sarapan rendah gula yang diperkaya. Makanan ini bahkan mungkin memberikan 100% nilai harian asam folat per sajian.\n\n\t\t\tSebagian besar profesional kesehatan menyarankan wanita hamil untuk mengonsumsi vitamin prenatal setiap hari dan mengonsumsi makanan, camilan, dan minuman sehat. Tanyakan kepada dokter Anda mengenai apa yang sebaiknya Anda konsumsi.</item>
+        <item>\t\t\tSebagian besar wanita memerlukan jumlah aktivitas fisik yang sama seperti sebelum hamil. Tetapkan target setidaknya 150 menit per minggu dari aktivitas aerobik dengan intensitas sedang. Aktivitas aerobik, juga disebut aktivitas ketahanan atau kardio, menggunakan kelompok otot besar (punggung, dada, dan kaki) untuk meningkatkan detak jantung dan pernapasan. Berjalan cepat adalah bentuk aktivitas aerobik.\n\n\t\t\tBagaimana Anda bisa tahu apakah Anda melakukan aktivitas aerobik dengan intensitas sedang? Lakukan "tes bicara" untuk mengetahuinya. Jika Anda bernapas dengan keras tetapi masih bisa berbicara dengan mudah tapi tidak bisa bernyanyi itu adalah intensitas sedang.\n\n\t\t\tJika Anda hanya bisa mengucapkan beberapa kata sebelum berhenti untuk bernapas, itu disebut sebagai aktivitas intensitas tinggi. Jika Anda sudah terbiasa melakukan aktivitas aerobik dengan intensitas tinggi atau aktif secara fisik sebelum kehamilan, maka kemungkinan besar Anda dapat melanjutkan aktivitas tersebut selama kehamilan.\n\n\t\t\tAnda dapat berbicara dengan profesional kesehatan Anda tentang apakah dan bagaimana menyesuaikan aktivitas fisik Anda selama hamil. Jika Anda memiliki masalah kesehatan seperti obesitas, tekanan darah tinggi, diabetes, atau anemia (jumlah sel darah merah yang sehat terlalu sedikit), tanyakan kepada profesional kesehatan Anda mengenai tingkat aktivitas yang aman untuk Anda dan bayi yang belum lahir.</item>
+        <item>\t\t\tMenyusui mungkin atau mungkin tidak memudahkan Anda untuk menurunkan berat badan karena tubuh Anda menggunakan kalori ekstra untuk memproduksi ASI. Meskipun menyusui tidak membantu Anda menurunkan berat badan, itu terkait dengan banyak manfaat lainnya bagi ibu dan anak.\n\n\t\t\tBagi ibu yang menyusui, para ahli menyarankan agar memberi makan bayi hanya dengan ASI selama 6 bulan pertama—tanpa makanan atau minuman lain selama periode ini. Para ahli menyarankan agar wanita-wanita ini terus menyusui setidaknya hingga bayi mencapai usia 12 bulan.\n\n\t\t\tKebutuhan kalori saat menyusui bergantung pada seberapa banyak lemak tubuh yang Anda miliki dan seberapa aktif Anda. Bicarakan dengan profesional kesehatan Anda mengenai kebutuhan kalori Anda saat menyusui.</item>
+    </string-array>
+    <string-array name="data_photo">
+        <item>@drawable/tips_1</item>
+        <item>@drawable/tips_2</item>
+        <item>@drawable/tips_3</item>
+        <item>@drawable/tips_4</item>
+        <item>@drawable/tips_5</item>
+        <item>@drawable/tips_6</item>
+    </string-array>
+    <string name="week1_2">Perjalanan dimulai dengan pembuahan, di mana sejumlah sperma menembus sel telur, menghasilkan pembentukan zigot. Zigot yang kini menjadi telur yang telah dibuahi ini memulai perjalanannya menuju rahim.</string>
+    <string name="week3_4">Embrio yang sedang berkembang bertransisi menjadi blastosista saat bergerak masuk ke dalam rahim. Ini menandai awal pembentukan struktur fundamental seperti plasenta. Versi awal organ-organ penting, seperti jantung, otak, mata, dan tunas anggota tubuh, mulai membentuk bentuknya.</string>
+    <string name="week5_8">Sebuah krescendo perkembangan berlanjut ketika jantung mulai berdetak, dan embrio bertransformasi menjadi janin yang dapat dikenali. Organogenesis berlangsung dengan penuh semangat, membentuk dasar pertumbuhan dan spesialisasi sistem tubuh yang beragam untuk masa depan.</string>
+    <string name="week9_12">Janin semakin mengkristalkan bentuknya selama periode ini, dengan fitur wajah menjadi jelas, dan jari-jari tangan dan kaki yang kecil mulai muncul. Sistem organ utama terus berkembang, dan sistem saraf mengalami perkembangan awal yang kritis.</string>
+    <string name="week13_16">Janin memasuki fase aktivitas yang meningkat, dan gerakan menjadi terasa oleh ibu. Sementara itu, jari-jari kaki mulai terbentuk, dan karakteristik yang spesifik untuk jenis kelamin mulai teridentifikasi.</string>
+    <string name="week17_20">Trimester kedua menyaksikan perkembangan sensorik, dengan janin mengembangkan kemampuan untuk mendengar. Gerakan janin menjadi lebih nyata, dan ibu mungkin mengalami pengalaman menakjubkan mendengarkan irama detak jantung bayinya.</string>
+    <string name="week21_24">Pertumbuhan cepat adalah ciri khas tahap ini, karena proporsi janin menjadi lebih terdefinisi. Sistem pernapasan mulai matang, meskipun paru-paru belum sepenuhnya siap untuk bernapas secara mandiri.</string>
+    <string name="week25_26">Mata janin, yang selama ini tertutup, mulai terbuka. Perkembangan kritis terjadi dalam sistem pernapasan, mempersiapkannya untuk transisi yang akan datang ke kehidupan di luar rahim. Janin mulai merespons stimuli eksternal, seperti sentuhan dan suara.</string>
+    <string name="week27_30">Lapisan lemak mengumpul di bawah kulit janin, membantu dalam regulasi suhu. Refleks, seperti menelan dan mengisap, terus disempurnakan.</string>
+    <string name="week31_34">Sebagian besar organ berada di ambang kedewasaan, dan posisi janin bergeser, dengan kepala biasanya menghadap ke bawah sebagai persiapan untuk kelahiran. Sistem pernapasan, yang menjadi pusat perhatian pada trimester ketiga, berkembang menuju fungsionalitas penuh.</string>
+    <string name="week35_38">Beberapa minggu terakhir menandai penyelesaian sistem pencernaan dan pernapasan. Janin terus bertambah berat, terutama dalam bentuk jaringan adiposa penting, memastikan kesiapan untuk perjalanan ke dunia luar.</string>
+    <string name="week39_40">Mengakhiri tarian yang rumit dalam perkembangan, janin kini siap untuk kelahiran. Sistem organ telah matang, dan bayi seringkali turun ke wilayah panggul, menandakan kedatangan yang tidak lama lagi.</string>
+    <string name="days">%1$s\nHari</string>
+    <string name="armHelp">Mengukur Lingkar Lengan dengan Presisi</string>
+    <string name="armHelpDesc">\t\t\tMengukur lingkar lengan dengan akurat adalah proses yang sederhana menggunakan pita pengukur fleksibel. Posisikan Ibu dengan nyaman, temukan titik tengah antara bahu dan siku, bungkus pita dengan lembut di sekitar lengan, dan catat pengukurannya. Konsistensi sangat penting untuk hasil yang dapat diandalkan, menjadikannya langkah penting untuk melacak perubahan fisik atau memastikan penyesuaian pakaian yang akurat.</string>
+    <string name="fundusHelp">Pengukuran Tinggi Fundus selama Kehamilan</string>
+    <string name="fundusHelpDesc">\t\t\tUntuk memperkirakan tinggi uterus selama kehamilan, pengukuran tinggi fundus adalah praktik prenatal yang penting. Individu sebaiknya berbaring atau duduk dengan punggung lurus, memperlihatkan perut. Dengan menggunakan pita pengukur fleksibel, mulai di atas tulang panggul, perpanjang pita sepanjang lengkungan perut hingga ke bagian atas fundus uteri. Pastikan pita rata dan pas untuk pembacaan yang akurat. Pengukuran yang konsisten membantu dalam memantau pertumbuhan janin, tetapi evaluasi profesional diperlukan untuk diagnosis yang komprehensif. Selalu konsultasikan dengan penyedia layanan kesehatan untuk interpretasi hasil dan panduan lebih lanjut.</string>
+    <string name="heartHelp">Mengukur Denyut Jantung</string>
+    <string name="heartHelpDesc">\t\t\tUntuk mengukur denyut jantung per menit, temukan denyut nadi dengan meletakkan jari telunjuk dan jari tengah Anda di sisi leher atau pergelangan tangan. Sebagai alternatif, posisikan ujung jari Anda di bagian dalam pergelangan tangan atau di dasar ibu jari Anda. Hitung jumlah detak jantung yang Anda rasakan selama satu menit penuh. Jika sulit menghitung selama satu menit, hitung selama 15 detik dan kalikan hasilnya dengan empat untuk mendapatkan denyut per menit. Sebagai alternatif, Anda dapat menggunakan perangkat pengukur denyut jantung elektronik seperti monitor denyut jantung atau jam tangan pintar untuk pembacaan otomatis. Pastikan tubuh Anda dalam keadaan rileks untuk hasil yang akurat, hindari gerakan intens atau percakapan selama pengukuran. Catat denyut jantung per menit, mencerminkan seberapa cepat atau lambat jantung Anda berdetak dalam satu menit. Pengukuran sederhana ini memberikan wawasan tentang aktivitas kardiovaskular dan kesehatan jantung secara keseluruhan, dengan denyut jantung normal pada orang dewasa umumnya berkisar antara 60 hingga 100 detak per menit. Jika Anda memiliki kekhawatiran tentang denyut jantung Anda, disarankan untuk berkonsultasi dengan profesional kesehatan.</string>
+    <string name="are_you_sure_want_to_logout">Apakah Anda yakin ingin keluar?</string>
+    <string name="yes">Ya</string>
+    <string name="no">Tidak</string>
+    <string name="re_confirm_password">Konfirmasi Ulang Kata Sandi</string>
+    <string name="re_confirm_password_cannot_be_empty">Konfirmasi ulang kata sandi tidak boleh kosong.</string>
+    <string name="password_do_not_match">Kata sandi tidak cocok.</string>
+    <string name="login_successful">Sukses masuk</string>
+    <string name="language">Bahasa</string>
+</resources>
