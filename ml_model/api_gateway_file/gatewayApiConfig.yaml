@@ -1,0 +1,208 @@
+swagger: "2.0"
+info:
+  version: 1.0.0
+  title: API Gateway with FastAPI and REST API
+paths:
+  /predict:
+    post:
+      summary: Send a request to the FastAPI backend
+      operationId: postPredicts
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: body
+          description: Request for the FastAPI backend
+          required: true
+          schema:
+            type: object
+            properties:
+              features:
+                type: array
+                items:
+                  type: number
+                example: [25, 280, 60, 165, 22, 25, 30, 80]
+      responses:
+        "200":
+          description: Response from the FastAPI backend
+          schema:
+            type: object
+            properties:
+              prediction:
+                type: integer
+                example: 1
+              probability:
+                type: number
+                example: 0.85
+              advice:
+                type: string
+                example: "Rekomendasi penggunaan"
+      x-google-backend:
+        address: "https://link-api/predict"
+
+  /signup:
+    post:
+      summary: User Signup
+      tags:
+        - "Authentication"
+      operationId: signUpUser
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: body
+          description: User signup data
+          required: true
+          schema:
+            type: object
+            properties:
+              username:
+                type: string
+              email:
+                type: string
+              password:
+                type: string
+      responses:
+        200:
+          description: Signup successful
+          schema:
+            type: object
+            properties:
+              message:
+                type: string
+              user:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                  username:
+                    type: string
+                  email:
+                    type: string
+                  token:
+                    type: string
+        400:
+          description: Invalid request payload
+        500:
+          description: Internal Server Error
+      x-google-backend:
+        address: "https://link-api/signup"
+
+  /login:
+    post:
+      summary: User Login
+      tags:
+        - "Authentication"
+      operationId: loginUser
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: body
+          name: body
+          description: User login data
+          required: true
+          schema:
+            type: object
+            properties:
+              username:
+                type: string
+              password:
+                type: string
+              periodTime:
+                type: string
+      responses:
+        200:
+          description: Login successful
+          schema:
+            type: object
+            properties:
+              message:
+                type: string
+              user:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                  username:
+                    type: string
+                  email:
+                    type: string
+                  periodTime:
+                    type: string
+                  token:
+                    type: string
+        401:
+          description: Invalid username and/or password
+        500:
+          description: Internal Server Error
+      x-google-backend:
+        address: "https://link-api/login"
+
+  /logout:
+    post:
+      summary: User Logout
+      tags:
+        - "Authentication"
+      operationId: logoutUser
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: header
+          name: Authorization
+          description: JWT token
+          required: true
+          type: string
+      responses:
+        200:
+          description: Logout successful
+        401:
+          description: Unauthorized
+        500:
+          description: Internal Server Error
+      x-google-backend:
+        address: "https://link-api/logout"
+
+  /change-password:
+    post:
+      summary: Change User Password
+      tags:
+        - "Authentication"
+      operationId: changeUserPassword
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - in: header
+          name: Authorization
+          description: JWT token
+          required: true
+          type: string
+        - in: body
+          name: body
+          description: Change password data
+          required: true
+          schema:
+            type: object
+            properties:
+              currentPassword:
+                type: string
+              newPassword:
+                type: string
+      responses:
+        200:
+          description: Password changed successfully
+        401:
+          description: Unauthorized or Invalid current password
+        500:
+          description: Internal Server Error
+      x-google-backend:
+        address: "https://link-api/change-password"
