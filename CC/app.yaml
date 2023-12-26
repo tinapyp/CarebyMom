@@ -1,0 +1,11 @@
+runtime: nodejs20
+handlers:
+- url: /testing.*
+  script: auto
+
+env_variables:
+  NODE_ENV: NODE_ENV
+  MYSQL_USER: MYSQL_USER
+  MYSQL_PASSWORD: MYSQL_PASSWORD
+  MYSQL_HOST: MYSQL_HOST
+  MYSQL_DATABASE: MYSQL_DATABASE
