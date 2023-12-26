@@ -4,7 +4,7 @@ const jwt = require('jsonwebtoken');
 const bcrypt = require('bcrypt');
 
 const generateToken = (user) => {
-  return jwt.sign({ username: user.username, email: user.email }, 'secret-key', { expiresIn: '1h' });
+  return jwt.sign({ username: user.username, email: user.email }, 'secret', { expiresIn: '1h' });
 };
 
 module.exports = {
