@@ -38,8 +38,8 @@ For a detailed overview of CarebyMom's features, functionalities, and how to use
 5. **Bryan Timothy (Project Team Members):** Contributes as a team member in the cloud computing development.
 
 ### Mobile Development Team (MD)
-6. **A206BSY2673 - Teuku Razqy Sulaiman (Project Team Members Mobile Development Leads):** Leads the mobile development team.
-7. **A105BSX2848 - Nabila Febriyana (Project Team Members):** Contributes as a team member in the mobile development.
+6. **Teuku Razqy Sulaiman (Project Team Members Mobile Development Leads):** Leads the mobile development team.
+7. **Nabila Febriyana (Project Team Members):** Contributes as a team member in the mobile development.
 
 ## Getting Started
 To get started with the CarebyMom application, refer to the respective folders for detailed instructions and documentation:
