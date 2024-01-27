@@ -25,7 +25,9 @@ For a detailed overview of CarebyMom's features, functionalities, and how to use
 - **Programming Language:** JavaScript
 
 ### Mobile Development Team (MD)
-- **Framework:** Flutter
+- **Programming Language:** Kotlin
+- **User Interface (UI):** XML Layouts
+- **Networking:** Retrofit
 
 ## Team Members and Roles
 ### Machine Learning Team (ML)
