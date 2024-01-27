@@ -11,7 +11,7 @@ For a detailed overview of CarebyMom's features, functionalities, and how to use
 
 ## Tech Stack
 ### Machine Learning Team (ML)
-- **Framework:** TensorFlow, Scikit-learn, Numpy, Pandas, 
+- **Framework:** TensorFlow, Scikit-learn, Numpy, Pandas
 - **Programming Language:** Python
 - **API Development:** FastAPI
 - **Containerization and Deployment:** Docker
