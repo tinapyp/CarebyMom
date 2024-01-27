@@ -17,7 +17,7 @@ For a detailed overview of CarebyMom's features, functionalities, and how to use
 ## Tech Stack
 
 ### Machine Learning Team (ML)
-- **Framework:** TensorFlow
+- **Framework:** TensorFlow, Scikit-learn, Numpy, Pandas, 
 - **Programming Language:** Python
 - **API Development:** FastAPI
 - **Containerization and Deployment:** Docker
@@ -26,8 +26,9 @@ For a detailed overview of CarebyMom's features, functionalities, and how to use
 ### Cloud Computing Team (CC)
 - **API Development:** REST API
 - **User Authentication:** Handle user login/logout
+- **API Management:** API Gateway
 - **Database Management:** PostgreSQL
-- **Frontend Integration:** JavaScript
+- **Programming Language:** JavaScript
 
 ### Mobile Development Team (MD)
 - **Framework:** Flutter
@@ -47,9 +48,8 @@ For a detailed overview of CarebyMom's features, functionalities, and how to use
 5. **C286BSY4185 - Bryan Timothy (Project Team Members):** Contributes as a team member in the cloud computing development.
 
 ### Mobile Development Team (MD)
-6. **A105BSX2848 - Nabila Febriyana (Project Team Members):** Contributes as a team member in the mobile development.
-
-7. **A206BSY2673 - Teuku Razqy Sulaiman (Project Team Members Mobile Development Leads):** Leads the mobile development team.
+6. **A206BSY2673 - Teuku Razqy Sulaiman (Project Team Members Mobile Development Leads):** Leads the mobile development team.
+7. **A105BSX2848 - Nabila Febriyana (Project Team Members):** Contributes as a team member in the mobile development.
 
 ## Getting Started
 
