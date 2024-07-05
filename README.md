@@ -2,7 +2,7 @@
 Welcome to the CarebyMom project repository! This repository houses the source code and assets for our pregnancy monitoring application, CarebyMom. The application is designed to detect early pregnancy complications and serve as a comprehensive pregnancy tracker.
 
 ## Product Overview
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)](https://youtu.be/lXgWtgwnJZA?si=v-p7Z_WxrZrSndTJ)
+[![Watch the video](https://github.com/tinapyp/CarebyMom/blob/main/overview.png)](https://youtu.be/lXgWtgwnJZA?si=v-p7Z_WxrZrSndTJ)
 
 ## Project Structure
 - **ml_model:** Contains the machine learning model implemented for early detection of pregnancy complications.
